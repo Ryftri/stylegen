@@ -1,0 +1,80 @@
+# ==================================================================
+# File dan Folder yang Dihasilkan Node.js
+# ==================================================================
+
+# Direktori dependensi. Ini adalah folder yang paling penting untuk diabaikan.
+# Jangan pernah memasukkan node_modules ke dalam Git.
+node_modules/
+
+# File log yang dihasilkan oleh NPM jika terjadi error saat instalasi.
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# File lock untuk manajemen versi paket.
+# Beberapa orang memilih untuk menyimpannya, tapi jika Anda bekerja sendiri
+# atau tim Anda menginstal dependensi berdasarkan package.json, ini aman untuk diabaikan.
+package-lock.json
+yarn.lock
+
+# ==================================================================
+# File Sistem Operasi
+# ==================================================================
+
+# File konfigurasi dan sampah dari macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnail cache untuk gambar dari Windows
+Thumbs.db
+ehthumbs.db
+
+# ==================================================================
+# File yang Dihasilkan dari Proses Development
+# ==================================================================
+
+# File environment. File ini berisi kunci API dan rahasia lainnya.
+# Sangat penting untuk TIDAK memasukkannya ke Git.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# File hasil kompilasi atau build. Jika Anda menggunakan TypeScript atau bundler.
+/dist
+/build
+/out
+
+# Log aplikasi
+logs/
+*.log
+npm-debug.log*
+
+# ==================================================================
+# File Editor Kode
+# ==================================================================
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains (WebStorm, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ==================================================================
+# File Lain-lain
+# ==================================================================
+
+# File output dari tool Anda yang dihasilkan saat pengujian lokal
+# Anda bisa menambahkan nama file output default di sini agar tidak masuk ke git.
+*.css

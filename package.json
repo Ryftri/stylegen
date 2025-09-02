@@ -1,0 +1,39 @@
+{
+  "name": "stylegen",
+  "version": "1.0.0",
+  "description": "A powerful CLI tool to convert Material Design theme JSON files into CSS custom properties with RGB values and tonal palettes.",
+  "main": "convert-theme-rgb.js",
+  "bin": {
+    "stylegen": "./convert-theme-rgb.js"
+  },
+  "files": [
+    "convert-theme-rgb.js"
+  ],
+  "scripts": {
+    "start": "node ./convert-theme-rgb.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOUR_USERNAME/stylegen.git"
+  },
+  "keywords": [
+    "cli",
+    "css",
+    "style",
+    "generator",
+    "theme",
+    "material design",
+    "rgb",
+    "tailwind"
+  ],
+  "author": "Your Name <your.email@example.com> (https://your-website.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/stylegen/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/stylegen#readme",
+  "dependencies": {
+    "chroma-js": "^3.1.2",
+    "commander": "^14.0.0"
+  }
+}
