@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/stylegen.git"
+    "url": "git+https://github.com/Ryftri/stylegen.git"
   },
   "keywords": [
     "cli",
@@ -26,12 +26,12 @@
     "rgb",
     "tailwind"
   ],
-  "author": "Your Name <your.email@example.com> (https://your-website.com)",
+  "author": "Ryftri <rayhanzulfitri@gmail.com> (https://github.com/Ryftri)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/stylegen/issues"
+    "url": "https://github.com/Ryftri/stylegen/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/stylegen#readme",
+  "homepage": "https://github.com/Ryftri/stylegen#readme",
   "dependencies": {
     "chroma-js": "^3.1.2",
     "commander": "^14.0.0"
