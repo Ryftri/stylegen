@@ -4,7 +4,7 @@
   "description": "A powerful CLI tool to convert Material Design theme JSON files into CSS custom properties with RGB values and tonal palettes.",
   "main": "convert-theme-rgb.js",
   "bin": {
-    "stylegen": "./convert-theme-rgb.js"
+    "stylegen": "convert-theme-rgb.js"
   },
   "files": [
     "convert-theme-rgb.js"
