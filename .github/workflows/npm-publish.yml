@@ -32,7 +32,7 @@ jobs:
       - run: npm ci
       # Untuk paket dengan scope, flag --access=public mungkin diperlukan
       # Namun, GitHub Actions biasanya sudah menanganinya dengan baik jika paketnya publik
-      - run: npm publish
+      - run: npm publish --access=public
         env:
           # Menggunakan token yang sudah disimpan di GitHub Secrets
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
