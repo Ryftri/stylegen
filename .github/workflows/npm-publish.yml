@@ -1,0 +1,38 @@
+# Nama workflow yang akan muncul di tab Actions GitHub
+name: Publish to NPM
+
+# Pemicu: Workflow ini berjalan saat sebuah "Release" baru dibuat di GitHub
+on:
+  release:
+    types: [created]
+
+jobs:
+  # Pekerjaan pertama: menginstal dependensi untuk memastikan tidak ada error
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x' # Menggunakan Node.js versi 20
+      - run: npm ci # Instal dependensi secara bersih
+
+  # Pekerjaan kedua: mempublikasikan paket ke NPM
+  publish-npm:
+    # Baru berjalan setelah 'build' sukses
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+          # Mengarahkan setup-node untuk menggunakan registry NPM
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      # Untuk paket dengan scope, flag --access=public mungkin diperlukan
+      # Namun, GitHub Actions biasanya sudah menanganinya dengan baik jika paketnya publik
+      - run: npm publish
+        env:
+          # Menggunakan token yang sudah disimpan di GitHub Secrets
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
