@@ -1,6 +1,6 @@
 {
   "name": "@ryftri/stylegen",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A powerful CLI tool to convert Material Design theme JSON files into CSS custom properties with RGB values and tonal palettes.",
   "main": "convert-theme-rgb.js",
   "bin": {

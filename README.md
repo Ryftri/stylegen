@@ -1,6 +1,6 @@
 # StyleGen CLI
 
-[![NPM Version](https://img.shields.io/npm/v/stylegen.svg)](https://www.npmjs.com/package/stylegen)
+[![NPM Version](https://img.shields.io/npm/v/@ryftri/stylegen.svg)](https://www.npmjs.com/package/@ryftri/stylegen)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A powerful and simple CLI tool to convert Material Design theme JSON files into CSS custom properties with RGB values and tonal palettes. Perfect for integrating a design system's tokens into a web project.
@@ -18,10 +18,8 @@ A powerful and simple CLI tool to convert Material Design theme JSON files into 
 Install `stylegen` globally using NPM to use it anywhere on your system.
 
 ```bash
-npm install -g stylegen
+npm install -g @ryftri/stylegen
 ```
-
-*(Note: The package name `stylegen` might be taken. Ensure you use your final package name if it's different)*
 
 ## Usage
 

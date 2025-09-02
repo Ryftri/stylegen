@@ -111,7 +111,7 @@ function toKebabCase(str) {
 const program = new Command();
 
 program
-  .version('1.0.0', '-v, --version', 'Output the current version')
+  .version('1.0.3', '-v, --version', 'Output the current version')
   .description('A CLI to convert a Material Design theme JSON into CSS RGB variables.')
   .requiredOption('-i, --input <file>', 'Source JSON theme file to process')
   .option('-o, --output <file>', 'Output CSS file name (optional)')
