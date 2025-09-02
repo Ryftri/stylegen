@@ -12,12 +12,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# File lock untuk manajemen versi paket.
-# Beberapa orang memilih untuk menyimpannya, tapi jika Anda bekerja sendiri
-# atau tim Anda menginstal dependensi berdasarkan package.json, ini aman untuk diabaikan.
-package-lock.json
-yarn.lock
-
 # ==================================================================
 # File Sistem Operasi
 # ==================================================================
